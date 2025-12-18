@@ -1,0 +1,37 @@
+/* src/resources/style.css */
+
+/* 1. The General Block Look (Buttons & Combo Boxes) */
+.button, .combo-box {
+    -fx-background-color: linear-gradient(#ff5400, #be1d00);
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 30;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+/* 2. Hover Effect (Glow) */
+.button:hover, .combo-box:hover {
+    -fx-background-color: linear-gradient(#ff7400, #ff2d00); /* Brighter */
+    -fx-effect: dropshadow(three-pass-box, rgba(255,255,255,0.5), 10, 0, 0, 0);
+}
+
+/* 3. The Dropdown List (The Popup) */
+.combo-box-popup .list-view {
+    -fx-background-color: #be1d00; /* Dark Red Background */
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+/* 4. The Items inside the List */
+.combo-box-popup .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10; 
+}
+
+/* 5. Hovering over a list item */
+.combo-box-popup .list-cell:filled:hover {
+    -fx-background-color: #ff5400; /* Lighter Orange */
+}
