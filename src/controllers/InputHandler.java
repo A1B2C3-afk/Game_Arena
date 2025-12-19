@@ -5,7 +5,7 @@ import javafx.scene.input.KeyCode;
 import java.util.HashSet;
 import java.util.Set;
 
-public class InputHandle
+public class InputHandler
     private Set<KeyCode> activeKeys = new HashSet<>();
 
     public InputHandler(Scene scene) {
