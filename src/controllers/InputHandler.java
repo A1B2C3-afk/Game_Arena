@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class InputHandler
+    {
     private Set<KeyCode> activeKeys = new HashSet<>();
 
     public InputHandler(Scene scene) {
